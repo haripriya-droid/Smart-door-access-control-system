@@ -1,4 +1,4 @@
-\# 🔐 Smart Door-Access Control System
+# 🔐 Smart Door-Access Control System
 
 
 
@@ -6,15 +6,15 @@ An Arduino-based smart access control system that combines human presence detect
 
 
 
-\---
+---
 
 
 
-\## 📌 Overview
+## 📌 Overview
 
 
 
-The \*\*Smart Door Access Control System\*\* is an embedded security system developed and simulated using \*\*Arduino Uno and Wokwi\*\*.
+The **Smart Door Access Control System\*\* is an embedded security system developed and simulated using **Arduino Uno and Wokwi**.
 
 
 
@@ -26,7 +26,7 @@ After successful RFID authentication, the user can enter a password using a 4×4
 
 
 
-The keypad is connected to a custom \*\*PCF8574 I/O expander\*\*, which communicates with the Arduino through \*\*I²C\*\*.
+The keypad is connected to a custom **PCF8574 I/O expander**, which communicates with the Arduino through **I²C**.
 
 
 
@@ -34,11 +34,11 @@ If authentication is successful, a servo motor simulates the unlocking of the do
 
 
 
-\---
+---
 
 
 
-\## 🔄 System Flow
+## 🔄 System Flow
 
 
 
@@ -106,47 +106,47 @@ If authentication is successful, a servo motor simulates the unlocking of the do
 
 
 
-\---
+---
 
 
 
-\## ✨ Features
+## ✨ Features
 
 
 
-\- PIR-based human presence detection
+- PIR-based human presence detection
 
-\- Ultrasonic distance detection
+- Ultrasonic distance detection
 
-\- RFID-based authentication
+- RFID-based authentication
 
-\- 4×4 matrix keypad for password entry
+- 4×4 matrix keypad for password entry
 
-\- Custom PCF8574 I/O expander
+- Custom PCF8574 I/O expander
 
-\- I²C communication
+- I²C communication
 
-\- OLED user interface
+- OLED user interface
 
-\- Password verification
+- Password verification
 
-\- Servo-based door lock simulation
+- Servo-based door lock simulation
 
-\- Multiple authorized RFID cards
+- Multiple authorized RFID cards
 
-\- Non-blocking timing using `millis()`
+- Non-blocking timing using `millis()`
 
-\- Custom Wokwi chip implementation
+- Custom Wokwi chip implementation
 
-\- Complete Wokwi simulation
-
-
-
-\---
+- Complete Wokwi simulation
 
 
 
-\## 🧰 Hardware Components
+---
+
+
+
+## 🧰 Hardware Components
 
 
 
@@ -176,15 +176,15 @@ If authentication is successful, a servo motor simulates the unlocking of the do
 
 
 
-\---
+---
 
 
 
-\## 🔌 Communication
+## 🔌 Communication
 
 
 
-\### I²C Communication
+### I²C Communication
 
 
 
@@ -228,7 +228,7 @@ The Arduino activates one row at a time and checks the column states to determin
 
 
 
-\### SPI Communication
+### SPI Communication
 
 
 
@@ -236,11 +236,11 @@ The MFRC522 RFID reader communicates with the Arduino using the SPI protocol.
 
 
 
-\---
+---
 
 
 
-\## 🔢 Keypad Scanning
+## 🔢 Keypad Scanning
 
 
 
@@ -288,25 +288,25 @@ The keypad scanning logic is implemented in:
 
 
 
-\### Keypad Controls
+### Keypad Controls
 
 
 
-&#x20;   \* → Backspace
+&#x20;   * → Backspace
 
 &#x20;   # → Enter
 
 
 
-The `\*` key is used to remove the previously entered character, while the `#` key is used to submit the entered password.
+The `*` key is used to remove the previously entered character, while the `#` key is used to submit the entered password.
 
 
 
-\---
+---
 
 
 
-\## 🔐 RFID Authentication
+## 🔐 RFID Authentication
 
 
 
@@ -352,11 +352,11 @@ The authentication process is:
 
 
 
-\---
+---
 
 
 
-\## 🔢 Password Authentication
+## 🔢 Password Authentication
 
 
 
@@ -368,13 +368,13 @@ The keypad uses special keys for password control:
 
 
 
-&#x20;   \* → Backspace
+&#x20;   * → Backspace
 
 &#x20;   # → Enter
 
 
 
-The `\*` key removes the last entered character, while the `#` key confirms and submits the password.
+The `*` key removes the last entered character, while the `#` key confirms and submits the password.
 
 
 
@@ -402,11 +402,11 @@ The entered password is then compared with the authorized password.
 
 
 
-\---
+---
 
 
 
-\## 🖥️ OLED Display
+## 🖥️ OLED Display
 
 
 
@@ -432,11 +432,11 @@ The OLED communicates with the Arduino using I²C.
 
 
 
-\---
+---
 
 
 
-\## 🚪 Door Control
+## 🚪 Door Control
 
 
 
@@ -468,11 +468,11 @@ The servo can later be replaced with an appropriate physical locking mechanism f
 
 
 
-\---
+---
 
 
 
-\## ⏱️ Non-Blocking Timing
+## ⏱️ Non-Blocking Timing
 
 
 
@@ -488,31 +488,31 @@ Timing is used for operations such as:
 
 
 
-\- PIR checking
+- PIR checking
 
-\- Ultrasonic measurement
+- Ultrasonic measurement
 
-\- Keypad processing
+- Keypad processing
 
-\- OLED updates
+- OLED updates
 
-\- RFID checking
+- RFID checking
 
-\- Buzzer control
+- Buzzer control
 
-\- Servo control
-
-
-
-\---
+- Servo control
 
 
 
-\## 🧪 Wokwi Simulation
+---
 
 
 
-The complete system is simulated using \*\*Wokwi\*\*.
+## 🧪 Wokwi Simulation
+
+
+
+The complete system is simulated using **Wokwi**.
 
 
 
@@ -538,11 +538,11 @@ The circuit configuration is defined in:
 
 
 
-\---
+---
 
 
 
-\## 🔗 Wokwi Simulation
+## 🔗 Wokwi Simulation
 
 
 
@@ -550,16 +550,16 @@ The complete project can be tested through the Wokwi simulation.
 
 
 
-\*\*Wokwi Project:\*\*  
+**Wokwi Project:**  
 
 
 https://wokwi.com/projects/473753324101395457
 
 
-\---
+---
 
 
-\## 📂 Project Structure
+## 📂 Project Structure
 
 
 
@@ -589,7 +589,7 @@ https://wokwi.com/projects/473753324101395457
 
 
 
-\### Important Files
+### Important Files
 
 
 
@@ -611,49 +611,49 @@ https://wokwi.com/projects/473753324101395457
 
 
 
-\---
+---
 
 
 
-\## 💻 Technologies Used
+## 💻 Technologies Used
 
 
 
-\- Arduino C/C++
+- Arduino C/C++
 
-\- Arduino Uno
+- Arduino Uno
 
-\- Wokwi
+- Wokwi
 
-\- I²C
+- I²C
 
-\- SPI
+- SPI
 
-\- RFID
+- RFID
 
-\- Matrix keypad scanning
+- Matrix keypad scanning
 
-\- PCF8574 I/O expansion
+- PCF8574 I/O expansion
 
-\- OLED display
+- OLED display
 
-\- PIR sensing
+- PIR sensing
 
-\- Ultrasonic sensing
+- Ultrasonic sensing
 
-\- Servo control
+- Servo control
 
-\- `millis()`-based timing
+- `millis()`-based timing
 
-\- Embedded systems programming
-
-
-
-\---
+- Embedded systems programming
 
 
 
-\## 🎯 Project Objective
+---
+
+
+
+## 🎯 Project Objective
 
 
 
@@ -689,11 +689,11 @@ The project also provides practical experience with hardware-software integratio
 
 
 
-\---
+---
 
 
 
-\## 📚 Learning Outcomes
+## 📚 Learning Outcomes
 
 
 
@@ -701,41 +701,41 @@ This project provided practical experience with:
 
 
 
-\- Arduino programming
+- Arduino programming
 
-\- Embedded C/C++
+- Embedded C/C++
 
-\- I²C communication
+- I²C communication
 
-\- SPI communication
+- SPI communication
 
-\- Matrix keypad scanning
+- Matrix keypad scanning
 
-\- GPIO expansion
+- GPIO expansion
 
-\- RFID interfacing
+- RFID interfacing
 
-\- OLED interfacing
+- OLED interfacing
 
-\- Sensor integration
+- Sensor integration
 
-\- Servo control
+- Servo control
 
-\- Non-blocking programming
+- Non-blocking programming
 
-\- `millis()` timing
+- `millis()` timing
 
-\- Custom Wokwi chip development
+- Custom Wokwi chip development
 
-\- Hardware-software integration
-
-
-
-\---
+- Hardware-software integration
 
 
 
-\## 🚀 Future Improvements
+---
+
+
+
+## 🚀 Future Improvements
 
 
 
@@ -743,52 +743,50 @@ Possible future improvements include:
 
 
 
-\- EEPROM-based password storage
+- EEPROM-based password storage
 
-\- Individual passwords for RFID cards
+- Individual passwords for RFID cards
 
-\- Password management through keypad
+- Password management through keypad
 
-\- Access logging
+- Access logging
 
-\- Real-time clock integration
+- Real-time clock integration
 
-\- Automatic door locking
+- Automatic door locking
 
-\- Failed-attempt lockout
+- Failed-attempt lockout
 
-\- Alarm functionality
+- Alarm functionality
 
-\- ESP32-based wireless monitoring
+- ESP32-based wireless monitoring
 
-\- Cloud/database integration
+- Cloud/database integration
 
-\- Real hardware implementation
-
-
-
-\---
+- Real hardware implementation
 
 
 
-\## 👩‍💻 Team
-
-
-\*\*Haripriya\*\*
-\*\*Gauri Banka\*\*  
+---
 
 
 
-\---
+## 👩‍💻 Team
+
+
+**Haripriya**
+**Gauri Banka**  
 
 
 
-\## ⭐ Project Status
+---
 
 
 
-\*\*Simulation prototype completed in Wokwi.\*\*
+## ⭐ Project Status
 
+
+**Simulation prototype completed in Wokwi.**
 
 
 The project currently demonstrates the core access-control logic, sensor integration, RFID authentication, keypad input, I²C communication, and servo-based door control in a simulated environment.
