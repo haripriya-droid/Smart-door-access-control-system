@@ -14,7 +14,7 @@ An Arduino-based smart access control system that combines human presence detect
 
 
 
-The **Smart Door Access Control System\*\* is an embedded security system developed and simulated using **Arduino Uno and Wokwi**.
+The **Smart Door-Access Control System** is an embedded security system developed and simulated using **Arduino Uno and Wokwi**.
 
 
 
@@ -774,7 +774,7 @@ Possible future improvements include:
 ## 👩‍💻 Team
 
 
-**Haripriya**
+**Haripriya** & 
 **Gauri Banka**  
 
 
