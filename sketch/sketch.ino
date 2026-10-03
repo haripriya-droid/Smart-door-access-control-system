@@ -27,11 +27,11 @@ char keys[ROWS][COLS] = {
   {'*','0','#','D'},
 };
 int  bpin = 2, lpin = 7;
-int servopin = 3 , spos ;
+int servopin = 3;
 int pirpin = 10 , val;          
 unsigned long cmillis;  
 unsigned long ultramillis , pirmillis;   
-int ultratime = 500, pirtime = 20 , buzztime = 500 , ledtime = 500;
+int ultratime = 500, pirtime = 20 , buzztime = 2000 , ledtime = 2000;
 long duration ; 
 float distance ;
 byte uid1[] = {0xAA, 0xBB, 0xCC, 0xDD};
@@ -45,17 +45,14 @@ void led()
 {
     digitalWrite(lpin, HIGH);
     delay(ledtime);
+    digitalWrite(lpin, LOW);
+
 }
 void buzzer()
 {
     digitalWrite(bpin,HIGH);
     delay(buzztime);
     digitalWrite(bpin, LOW);
-}
-void servo()
-{
-  spos=90;
-  myservo.write(spos);
 }
 void writePCF8574(byte data)
 {
@@ -227,7 +224,9 @@ void pwd()
   {
     display.println("AUTHORIZED");
     count=0;
-    servo();
+    myservo.write(90);
+    delay(2000)
+    myservo.write(0);
     display.display();
     delay(2000);
     enter = false;
