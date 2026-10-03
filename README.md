@@ -1,4 +1,4 @@
-\# 🔐 Smart Door Access Control System
+\# 🔐 Smart Door-Access Control System
 
 
 
@@ -552,24 +552,11 @@ The complete project can be tested through the Wokwi simulation.
 
 \*\*Wokwi Project:\*\*  
 
-PASTE-YOUR-WOKWI-LINK-HERE
 
-
-
-\---
-
-
-
-\## 🖼️ Project Preview
-
-
-
-!\[Smart Door Access Control System](Images/system-overview.png)
-
+https://wokwi.com/projects/473753324101395457
 
 
 \---
-
 
 
 \## 📂 Project Structure
@@ -787,10 +774,8 @@ Possible future improvements include:
 \## 👩‍💻 Team
 
 
-
-\*\*Gauri Banka\*\*  
-
 \*\*Haripriya\*\*
+\*\*Gauri Banka\*\*  
 
 
 
